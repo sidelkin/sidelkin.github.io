@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+    <meta charset="utf-8">
+    <title>Форма</title>
+</head>
+<body>
+    <h1>Форма регистрации пользователя</h1>
+<form action="#">
+    <table>
+        <tbody>
+            <tr>
+                <td><label>E-mail</label></td>
+                <td><input type="email" placeholder = "Введите e-mail" required></td>
+            </tr>
+                <td><label>Пароль</label></td>
+                <td><input type="password" placeholder = "Введите пароль" required></td>
+            <tr>
+                <td><label>Пол</label></td>
+                <td><input type="radio" name="a">Мужчина<input type="radio" name="a">Женщина</td>
+            </tr>
+
+            <tr>
+                <td><label>Год рождения</label></td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <td rowspan="5"><label>Я знаю</label></td>
+                <td><input type="checkbox">Русский</td>
+            </tr>
+
+            <tr><td><input type="checkbox">Испанский</td></tr>
+            <tr><td><input type="checkbox">Немецкий</td></tr>
+            <tr><td><input type="checkbox">Английский</td></tr>
+            <tr><td><input type="checkbox">Китайский</td></tr>
+
+            <tr>
+                <td><label>Обо мне</label></td>
+                <td><textarea cols="30" rows="10" placeholder = "Напишите коротко о себе"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit"></td>
+                <td><input type="reset"></td>
+            </tr>
+
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        nav ul{
+            list-style-image: url(pic/plus.gif);
+        }
+		
+        nav ul ul{
+			list-style-image: url(pic/point.gif);
+            display: none;
+        }
+        nav ul li:hover>ul{
+            display: inherit;
+        }
+        nav ul ul li{
+            display: list-item;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+		<ul>
+			<li><a href="#">Фильмы</a>
+				<ul>
+					<li><a href="#">Экшн</a></li>
+					<li><a href="#">Мелодрамы</a></li>
+					<li><a href="#">Сериалы</a></li>
+					<li><a href="#">Семейные</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Музыка</a>
+				<ul>
+					<li><a href="#">Классика</a></li>
+					<li><a href="#">Джаз</a></li>
+					<li><a href="#">Рок</a></li>
+					<li><a href="#">Грандж</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Софт</a>
+				<ul>
+					<li><a href="#">Графика</a></li>
+					<li><a href="#">3D-моделирование</a></li>
+					<li><a href="#">Машинопись</a></li>
+					<li><a href="#">Переводчики</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Игры</a>
+				<ul>
+					<li><a href="#">РПГ</a></li>
+					<li><a href="#">Шутеры</a></li>
+					<li><a href="#">Пасьянсы</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>
