@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--одна ворона
+        две вороны
+        три вороны
+        четыре вороны
+        пять ворон
+        шесть ворон
+        ...
+        двадцать ворон
+        двадцать одна ворона -->
+    <script>        
+        'use strict';
+        let num = prompt("Введите любое число: ");
+        if(num % 10 == 1 && (num % 100) != 11){
+            alert("На ветке сидит " + num + " ворона");
+        }
+        else if((num % 100) == 12 || (num % 100) == 13 || (num % 100) == 14 || (num % 100) == 15 || (num % 100) == 16 || (num % 100) == 17 || (num % 100) == 18 || (num % 100) == 19){
+            alert("На ветке сидит " + num + " ворон");
+        }
+        else if(num % 10 == 2 || num % 10 == 3 || num % 10 == 4){
+            alert("На ветке сидит " + num + " вороны");
+        }
+        else{
+            alert("На ветке сидит " + num + " ворон");
+        }
+            
+    </script>
+</body>
+</html>

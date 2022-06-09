@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+		'use strict';
+        let book1 ={};
+        book1.title = "1984";
+        book1.pubYear = "1949";
+        book1.price = "200";
+
+        let book2 = {
+            title: "Theatre", 
+            pubYear: "1937", 
+            price: "200"
+        };
+
+        for(let i in book1){
+			console.log(i + " - " + book1[i]);
+		}
+
+		for(let i in book2){
+			console.log(i + " - " + book1[i]);
+		}
+    </script>
+</body>
+</html>

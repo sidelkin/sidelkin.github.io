@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" id="hider" value="Нажмите, чтобы спрятать текст">
+
+	<div id="text">текст, который исчезнет</div>
+
+	<script>
+		'use strict';
+		let but = document.getElementById("hider");
+		but.addEventListener('click',function(){
+			let but = document.getElementById("text");
+			if(but.style.display != "none")
+				but.style.display = "none";
+			else
+				but.style.display = "block";
+		},false);
+	</script>
+
+</body></html>

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8"/>
+</head>
+<body>
+	<div id="texfield">Что-то написано</div>
+	<script>'use strict';
+		var tf = document.getElementById("texfield");
+		
+		document.addEventListener("keydown", function(event) {
+			
+			try {
+				if ((event.ctrlKey || event.metaKey) && event.code === "KeyE") {
+					event.preventDefault();
+					var di = document.querySelector('div');
+					di.outerHTML = '<textarea>' + di.innerHTML + '</textarea>'
+				} else if ((event.ctrlKey || event.metaKey) && event.code === "KeyS") {
+					event.preventDefault();
+					var di = document.querySelector('textarea');
+					di.outerHTML = '<div>' + di.value + '</div>'
+				} else if (event.code === "Escape") {
+					event.preventDefault();
+					var di = document.querySelector('textarea');
+					di.outerHTML = '<div>' + di.innerHTML + '</div>'
+				}
+			} catch (err) {console.log('!!!')};
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab1_5</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let num = prompt("Введите число");
+        let str = "";
+        let ctr = 0;
+        let i = 0;
+        outer_block: {
+            while (true) {
+                for (let dog = 3;dog > 0; dog-- ){
+                    str+= "dog ";
+                    ctr++;
+                    if (ctr == 6){
+                        str += '\n'
+                        ctr = 0;
+                        i++;
+                        if (i == num){
+                            break outer_block;
+                            }
+                        }
+                    }
+                for (let cat = 2;cat > 0; cat-- ){
+                    str+= "cat ";
+                    ctr++;
+                    if (ctr == 6){
+                        str += "\n";
+                        ctr = 0;
+                        i++;
+                        if (i == num){
+                            break outer_block;
+                        }
+                    }
+                }
+            }       
+        }
+        console.log(str);
+    </script>
+</body>
+</html>
